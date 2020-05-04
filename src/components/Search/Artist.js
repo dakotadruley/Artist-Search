@@ -6,6 +6,7 @@ const Artist = ({ name, url }) => (
 );
 
 Artist.propTypes = {
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
 };

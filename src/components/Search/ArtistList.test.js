@@ -1,13 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Artist from './Artist.js';
+import ArtistList from './ArtistList.js';
 
 describe('Artist', () => {
   it('matches a snapshot', () => {
-    const wrapper = shallow(<Artist
-      id='string'
-      name={'dakota superstar'}
-      url={'url'} />);
+    const wrapper = shallow(<ArtistList
+    />);
     expect(wrapper).toMatchSnapshot();
   });
 });
