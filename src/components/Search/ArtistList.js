@@ -22,8 +22,7 @@ const ArtistList = ({ artists }) => {
 ArtistList.propTypes = {
   artists: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired
+    name: PropTypes.string.isRequired
   })).isRequired
 };
 

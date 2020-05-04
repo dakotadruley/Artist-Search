@@ -6,8 +6,7 @@ describe('Artist', () => {
   it('matches a snapshot', () => {
     const wrapper = shallow(<Artist
       id='string'
-      name={'dakota superstar'}
-      url={'url'} />);
+      name={'dakota superstar'} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

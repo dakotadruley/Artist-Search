@@ -3,6 +3,7 @@ import {
   Route, 
   Switch,  
   BrowserRouter as Router } from 'react-router-dom';
+import SearchArist from '../../containers/Search/SearchArtist';
 
 export default function App() {
   return (
@@ -10,8 +11,8 @@ export default function App() {
       <Router>
         {/* <Header /> */}
         <Switch>
-          <Route exact path='/' component={QueenContainer} /> 
-          <Route exact path='/Detail/:id' component={DetailContainer} />
+          <Route exact path='/' component={SearchArist} /> 
+          {/* <Route exact path='/Detail/:id' component={DetailContainer} /> */}
         </Switch>
       </Router>
     </>
