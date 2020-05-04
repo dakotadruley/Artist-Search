@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchDisplay matches a snapshot 1`] = `
+<section>
+  <input
+    id="search"
+    name="dakota superstar"
+    onChange={[Function]}
+    placeholder="Enter Artist Name..."
+    type="text"
+    value="dakota superstar"
+  />
+  <button
+    onClick={[Function]}
+  >
+    Search
+  </button>
+</section>
+`;
