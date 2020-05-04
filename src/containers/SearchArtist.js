@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ArtistList from '../../components/Search/ArtistList.js';
-import SearchDisplay from '../../components/Search/SearchDisplay.js';
-import { fetchArtists } from '../../services/fetchArtists.js';
+import ArtistList from '../components/Artists/ArtistList.js';
+import SearchDisplay from '../components/Search/SearchDisplay.js';
+import { fetchArtists } from '../services/fetchArtists.js';
 
 const SearchArist = () => {
   const [search, setSearch] = useState('');

@@ -3,7 +3,7 @@ import {
   Route, 
   Switch,  
   BrowserRouter as Router } from 'react-router-dom';
-import SearchArist from '../../containers/Search/SearchArtist';
+import SearchArist from '../../containers/SearchArtist';
 
 export default function App() {
   return (
