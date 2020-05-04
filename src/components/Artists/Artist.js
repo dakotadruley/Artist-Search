@@ -12,4 +12,3 @@ Artist.propTypes = {
 
 export default Artist;
 
-// id like for them to click on the artist and have that url take you somewhere
