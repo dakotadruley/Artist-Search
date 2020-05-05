@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import ArtistList from '../components/Artists/ArtistList.js';
 import SearchDisplay from '../components/Search/SearchDisplay.js';
 import { fetchArtists } from '../services/fetchArtists.js';
-import Paging from '../components/Paging/Paging.js';
+import { withPaging } from '../utils/Paging/Paging.js';
 
-const SearchArist = () => {
+const SearchArist = ({ page, setTotalPages }) => {
   const [search, setSearch] = useState('');
   const [artists, setArtists] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -15,10 +16,19 @@ const SearchArist = () => {
 
   const handleClick = () => {
     setLoading(true);
-    fetchArtists(search)
-      .then(artists => setArtists(artists))
-      .then(() => setLoading(false));
+    fetchArtists(search, page)
+      .then(({ artists, totalPages }) => {
+        setArtists(artists);
+        setTotalPages(totalPages);
+        setLoading(false);
+      });
   };
+
+  // 
+  useEffect(() => {
+    if(search)
+      handleClick();
+  }, [page]);
 
   if(loading) return <h1>LOADIN</h1>;
   return (
@@ -28,5 +38,12 @@ const SearchArist = () => {
     </>
   );
 };
-export default SearchArist;
+// it's a function that returns the container that it's added paging to 
+
+SearchArist.propTypes = {
+  page: PropTypes.number.isRequired,
+  setTotalPages: PropTypes.func.isRequired
+};
+
+export default withPaging(SearchArist);
 
