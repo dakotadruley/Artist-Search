@@ -7,7 +7,7 @@ export const fetchArtists = (search, page) => {
       artists: json.artists.map(artist => ({
         id: artist.id,
         name: artist.name,
-        url: artist.url,
+        url: artist.url
       }))
     }));
 };

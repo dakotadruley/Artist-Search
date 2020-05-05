@@ -24,7 +24,7 @@ const SearchArist = ({ page, setTotalPages }) => {
       });
   };
 
-  // 
+  // if there is something in search bar
   useEffect(() => {
     if(search)
       handleClick();

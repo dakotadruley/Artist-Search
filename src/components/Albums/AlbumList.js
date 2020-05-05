@@ -21,7 +21,7 @@ const AlbumList = ({ albums }) => {
 
 AlbumList.propTypes = {
   albums: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired
   })).isRequired
