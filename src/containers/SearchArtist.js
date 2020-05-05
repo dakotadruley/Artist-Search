@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ArtistList from '../components/Artists/ArtistList.js';
 import SearchDisplay from '../components/Search/SearchDisplay.js';
 import { fetchArtists } from '../services/fetchArtists.js';
-import { withPaging } from '../utils/Paging/Paging.js';
+import { withPaging } from '../utils/Paging.js';
 
 const SearchArist = ({ page, setTotalPages }) => {
   const [search, setSearch] = useState('');

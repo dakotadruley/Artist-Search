@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import AlbumList from '../components/Albums/AlbumList.js';
 import { fetchAlbums } from '../services/fetchAlbums.js';
-import { withPaging } from '../utils/Paging/Paging.js';
+import { withPaging } from '../utils/Paging.js';
 
 const SearchAlbum = ({ page, setTotalPages }) => {
 //   const [artistId, setArtistId] = useState('');
@@ -11,8 +11,6 @@ const SearchAlbum = ({ page, setTotalPages }) => {
   const [loading, setLoading] = useState(false);
   //   useParams returns an objects were all the values are what's in the url
   const { artistId } = useParams();
-
-  console.log(artistId);
 
   // if there is an artistId
   useEffect(() => { 
