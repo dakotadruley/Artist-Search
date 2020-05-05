@@ -7,7 +7,7 @@ const AlbumList = ({ albums }) => {
   const albumElements = albums.map(album => (
     <Link to={`/Songs/${album.id}`} key={album.id} > 
       <li>
-        <Album{...album} />
+        <Album {...album} />
       </li>
     </Link>
   ));
@@ -22,7 +22,8 @@ const AlbumList = ({ albums }) => {
 AlbumList.propTypes = {
   albums: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired
   })).isRequired
 };
 
