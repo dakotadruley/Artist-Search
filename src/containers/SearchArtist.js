@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ArtistList from '../components/Artists/ArtistList.js';
 import SearchDisplay from '../components/Search/SearchDisplay.js';
 import { fetchArtists } from '../services/fetchArtists.js';
+import Paging from '../components/Paging/Paging.js';
 
 const SearchArist = () => {
   const [search, setSearch] = useState('');
