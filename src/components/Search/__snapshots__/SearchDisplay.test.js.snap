@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchDisplay matches a snapshot 1`] = `
-<section>
+<section
+  className="SearchDisplay"
+>
   <input
     id="search"
     name="dakota superstar"

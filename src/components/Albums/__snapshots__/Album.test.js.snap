@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Album matches a snapshot 1`] = `
+<section>
+  <h2>
+    One More Time
+  </h2>
+  <p>
+    1999
+  </p>
+</section>
+`;
