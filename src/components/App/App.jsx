@@ -6,6 +6,7 @@ import {
 import SearchArist from '../../containers/SearchArtist';
 import SearchAlbum from '../../containers/SearchAlbum';
 import SearchSong from '../../containers/SearchSong';
+import SearchLyrics from '../../containers/SearchLyrics';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route exact path='/' component={SearchArist} /> 
           <Route exact path='/Albums/:artistId' component={SearchAlbum} />
           <Route exact path='/Songs/:albumId' component={SearchSong} />
+          <Route exact path='/Lyrics/:songId' component={SearchLyrics} />
         </Switch>
       </Router>
     </>

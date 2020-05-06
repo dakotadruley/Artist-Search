@@ -11,7 +11,7 @@ const SongList = ({ songs }) => {
       </li>
     </Link>
   ));
-
+  // need artist name 
   return (
     <ul>
       {songElements}
