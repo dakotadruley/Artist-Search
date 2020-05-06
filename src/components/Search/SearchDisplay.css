@@ -1,0 +1,13 @@
+.SearchDisplay {{}
+
+    #search {
+        display: inline-block;
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    button {
+        display: inline-block;
+        margin: 1rem;
+    }
+}
